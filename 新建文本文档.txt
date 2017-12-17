@@ -1,0 +1,14 @@
+
+(select e.paper_id,e.level_1_id,e.level_1_name,e.sum_goal,w.man,w.woman  from
+
+(select x.paper_id,count(x.student_sex=0 or null)as man,count(x.student_sex=1 or null)as woman FROM
+(select y.paper_id,z.student_id,z.student_sex from student_paper_relationship as y,
+(select student_id,student_sex from student where school_id=1 and grade_id=6 and class_id=1)as z
+where y.student_id=z.student_id and y.paper_id = 1) as x) as w,
+
+(select d.paper_id,d.level_1_id,d.level_1_name, c.sum_goal from (select level_one_knowledge_point_id,sum(question_goal) as sum_goal from paper_questions where paper_id=1 GROUP BY level_one_knowledge_point_id) as c,
+(select a.level_one_knowledge_point_id as level_1_id,a.level_one_knowledge_point_name as level_1_name,b.paper_id as paper_id from level_one_knowledge_point as a,(select paper_id,level_one_knowledge_point_id from paper_questions where paper_id=1 GROUP BY level_one_knowledge_point_id)as b where a.level_one_knowledge_point_id = b.level_one_knowledge_point_id)as d
+where c.level_one_knowledge_point_id = d.level_1_id GROUP BY level_one_knowledge_point_id) as e
+group by e.level_1_id)
+
+

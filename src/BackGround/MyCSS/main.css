@@ -1,0 +1,78 @@
+
+.MyChart1{
+    width: 90%;
+    height:500px;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+.MyChart2{
+    width: 95%;
+    height:500px;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+.MyChart3{
+    width: 90%;
+    height:500px;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+.MyChart4{
+    width: 90%;
+    height:500px;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+.MyChart5{
+    width: 90%;
+    height:500px;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+.MyChart6{
+    width: 90%;
+    height:500px;
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 5%;
+
+
+    /*margin-top: 30px;*/
+}
+.MyFont1{
+    font-size: 11px;
+    margin-left: -16px
+}
+.tab-pane {
+    padding: 0;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 8px 12px;
+}
+.MyFont2{
+    font-size: 12px
+}
+
+
+/*.col-md-9 {*/
+    /*padding-left:0px;*/
+    /*padding-right:0px;*/
+/*}*/
+/*.col-xs-11 {*/
+    /*padding-left:0px;*/
+    /*padding-right:0px;*/
+/*}*/
+#Logo{
+    width: 10%;
+    height: auto;
+    max-width: 5%;
+    display: block;
+    margin-left: 47%
+}
+
+.col-xs-1{
+    padding-left: 0px;
+    padding-right: 0px;
+}

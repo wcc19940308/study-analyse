@@ -1,0 +1,29 @@
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: rgb(255,255,255); opacity:1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: rgb(255,255,255);opacity:1;
+}
+input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0px #888888 inset;
+    opacity:0.3;
+}
+input:-ms-input-placeholder{
+    color: rgb(255,255,255);opacity:0;
+}
+
+input::-webkit-input-placeholder{
+    color: rgb(255,255,255);opacity:0;
+}
+input{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+}
+.input_outer {
+    height: 46px;
+    padding: 0 5px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    position: relative;
+    border: rgba(255,255,255,1.0) 2px solid !important;
+}

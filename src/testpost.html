@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>测试Post发送数据</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<p id="show">
+
+	</p>
+
+
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript">
+$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/CountryDifferenceAnalyse_mysql",
+		dataType: 'jsonp', 
+		data:{
+			school_id:1,
+			grade_id:6,
+			class_id:1,
+			paper_id:1
+		},
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+		}
+	});
+/*$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/addclass_mysql/",
+		dataType: 'jsonp', 
+		data:{
+			school_id : 6,
+			grade_id  : 10,
+			class_name : '一年级一班' 
+		},
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+		}
+	});*/
+/*$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/addgrade_mysql/",
+		dataType: 'jsonp', 
+		data:{
+			school_id : 6,
+			grade_name : '一年级' 
+		},
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+		}
+	});*/
+/*$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/getAllSubject_mysql/",
+		dataType: 'jsonp', 
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+		}
+	});*/
+/*$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/addschool_mysql/",
+		dataType: 'jsonp', 
+		data:{
+			school_name : "杭州电子科技大学附属中学"
+		},
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+		}
+	});*/
+/*$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/addabilityrequire_mysql/",
+		dataType: 'jsonp', 
+		data:{
+			ability_require_name : "灵活运用"
+		},
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+		}
+	});*/
+/*$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/addthinkingtype_mysql/",
+		dataType: 'jsonp', 
+		data:{
+			thinking_name : "形象思维"
+		},
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+		}
+	});*/
+/*$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/addquestiontype_mysql/",
+		dataType: 'jsonp', 
+		data:{
+			question_type_name : "判断题"
+		},
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+		}
+	});*/
+/*$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/classanalyse_mysql/",
+		data : {
+			
+			class_id : 1	,
+			paper_id : 1 
+			
+			
+		},
+		dataType: 'jsonp', 
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+
+		}
+
+	});*/
+/*$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/addlevelonepoint_mysql/",
+		dataType: 'jsonp', 
+		data:{
+			level_one_knowledge_point_name :'不等式的解法' ,
+			level_two_knowledge_point_id : 15
+		},
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+		}
+	});*/
+
+/*$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/addknowlegdepoint_mysql/",
+		dataType: 'jsonp', 
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+		}
+	});*/
+/*$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/addleveltwopoint_mysql/",
+		dataType: 'jsonp', 
+		data :{
+			knowledgepoint : '不等式'
+		},
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+		}
+	});*/
+/*$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/checktwopoint_mysql/",
+		dataType: 'jsonp', 
+		data :{
+			knowledgepoint : '哈哈'
+		},
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+		}
+	});*/
+/*$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/checkSchool_mysql/",
+		dataType: 'jsonp', 
+		data:{
+			school_name : '哈哈哈'
+		},
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+
+		}
+
+	});*/
+/*
+$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/allocatesubject_mysql/",
+		dataType: 'jsonp', 
+		data :{
+			account :"t_0001"
+		},
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+
+		}
+
+	});*/
+/*$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/getSchool/",
+		dataType: 'jsonp', 
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+
+		}
+
+	});*/
+/*$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/register_mysql/",
+		dataType: 'jsonp', 
+		data :{
+			teacher_name : "tom",
+			account  	 : '13545878873',
+			passwd       :  '123456'	,
+			school_id    :  '1'
+		},
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+
+		}
+
+	});*/
+/*
+$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/getAllSchool_mysql/",
+		dataType: 'jsonp', 
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+
+		}
+
+	});
+*/
+
+/*$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/getSubject/",
+		dataType: 'jsonp', 
+		data:{
+			school_id :1,
+			grade_id : 6 
+		},
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+
+		}
+
+	});
+*/
+/*$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/multiple_analyse_mysql/",
+		data : {
+			
+			class_id : 1	,
+			school_id : 1 
+			
+		},
+		dataType: 'jsonp', 
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+
+		}
+
+	});*/
+
+/*$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/studentanalyse_mysql/",
+		data : {
+			
+			class_id : 1	,
+			paper_id : 1 ,
+			student_id : "20130501101002"
+			
+		},
+		dataType: 'jsonp', 
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+
+		}
+
+	});*/
+/*$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/all_student_mysql/",
+		data : {
+			
+			class_id : 1	
+			
+		},
+		dataType: 'jsonp', 
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+
+		}
+
+	});*/
+
+/*
+$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/grade_classification_mysql/",
+		data : {
+			
+			class_id : 1,		
+			paper_id :  1
+		},
+		dataType: 'jsonp', 
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+
+		}
+
+	});*/
+
+/*$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/papers_mysql/",
+		data : {
+			
+			class_id : 1,
+			class_subject_id : 1
+		},
+		dataType: 'jsonp', 
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+
+		}
+
+	});*/
+
+/*$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/subject_mysql/",
+		data : {
+			teacher_account : "t_0001",
+			class_id : 1
+		},
+		dataType: 'jsonp', 
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+
+		}
+
+	});*/
+/*$.ajax({
+
+		type :"GET",
+		url :"http://localhost:3003/login_mysql/",
+		dataType: 'jsonp', 
+		data : {
+			school_id : 1 ,
+			account : 't_0001',
+			password : '130001'
+		},
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+
+		}
+
+	});*/
+
+/* $.ajax({
+
+		type :"GET",
+		url :"http://101.37.175.222:3003/class_analyse/",
+		data:{
+			school_id : "school0001",
+			class_id  : "school0001_4_1",
+			paper_id : "x_04_math_001"
+		},
+		dataType: 'jsonp', 
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+
+		}
+
+	});*/
+
+/*	$.ajax({
+
+		type :"GET",
+		url :"http://101.37.175.222:3003/all_student/",
+		data:{
+			school_id : "school0001",
+			class_id  : "school0001_4_1"
+		},
+		dataType: 'jsonp', 
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+
+		}
+
+	});*/
+/*		$.ajax({
+
+		type :"GET",
+		url :"http://101.37.175.222:3003/studentanalyse/",
+		data:{
+			school_id : "school0001",
+			class_id  : "school0001_4_1",
+			student_id : "20130501101004",
+			paper_id : "x_04_math_001"
+		},
+		dataType: 'jsonp', 
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+
+		}
+
+	});*/
+/* $.ajax({
+
+		type :"GET",
+		url :"http://101.37.175.222:3003/city_country/",
+		data:{
+			school_id : "school0001",
+			class_id  : "school0001_4_1",
+			paper_id : "x_04_math_001"
+		},
+		dataType: 'jsonp', 
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+
+		}
+
+	});*/
+
+/*		$.ajax({
+
+		type :"GET",
+		url :"http://101.37.175.222:3003/multipleanalyse/",
+		data:{
+			school_id : "school0001",
+			class_id : "school0001_4_1",
+			class_course_id : "school0001_4_1_math"
+		},
+		dataType: 'jsonp', 
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+
+		}
+
+	});	
+*/
+/*	$.ajax({
+
+		type :"GET",
+		url :"http://101.37.175.222:3003/login/",
+		data:{
+			school_id : "school0001",
+			teacher_id : "t_0001",
+			passwd : "130001"
+		},
+		dataType: 'jsonp', 
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+
+
+		}
+
+	});	*/
+
+/*	$.ajax({
+
+		type :"GET",
+		url :"http://101.37.175.222:3003/paperanalyse/",
+		data:{
+			school_id : "school0001",
+			paper_id : "x_04_math_001",
+			class_id : "school0001_4_1"
+		},
+		dataType: 'jsonp', 
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+		success :function(data){
+			
+			$("#show").text(JSON.stringify(data));
+
+
+		}
+
+	});	
+	*/
+/*	$.ajax({
+
+		type :"GET",
+		url :"http://101.37.175.222:3003",
+		dataType: 'jsonp', 
+		jsonp:"callback",
+		jsonpCallback:"callback", 
+        //crossDomain: true,
+		success :function(data){
+	
+			$("#show").text(JSON.stringify(data));
+
+		},
+		error:function(data){
+			alert(JSON.stringify(data));
+		}
+
+	});*/
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="origin" name="referrer" />
+    <link crossorigin="anonymous" href="css/frameworks-1.css" integrity="sha256-1xN2kOMBI7reOKuwgqx582zHoQX/kuYCQF9TtyVGXKs=" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="css/github-1.css" integrity="sha256-fJZAr+0CgzWghAYvGkg3Xzt0A8sK4/1mAsN0WCk5B50=" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="css/site-1.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="../BackGround/MyCSS/main.css" media="all" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+    <title>学情分析系统</title>
+    <meta name="theme-color" content="#1e2327">
+    <meta name="u2f-support" content="true">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="../BackGround/MyJS/validate.js"></script>
+    <script src="../BackGround/MyJS/addSchoolList.js"></script>
+
+</head>
+<body class="logged-out env-production page-responsive min-width-0 session-authentication">
+<div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="px-2 py-4 show-on-focus js-skip-to-content">Skip to content</a>
+    <div  class="pjax-loader-bar"><div class="progress"></div></div>
+
+    <div class="header header-logged-out width-full pt-5 pb-4" role="banner">
+        <div class="container clearfix width-full">
+        </div>
+    </div>
+
+
+</div>
+<div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="px-2 py-4 show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+
+
+    <div class="header header-logged-out width-full pt-5 pb-4" role="banner">
+        <div class="container clearfix width-full text-center" >
+            <a class="header-logo" href="#" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark" style="">
+                <img id="Logo" src="../img/2.jpg">
+            </a>
+        </div>
+    </div>
+
+
+</div>
+
+<div id="start-of-content" class="show-on-focus"></div>
+
+<div role="main">
+    <div id="js-pjax-container" data-pjax-container>
+        <div class="auth-form px-3" id="login">
+
+            <form accept-charset="UTF-8" action="#" method="post" name="myForm" >
+                <!--<div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" />-->
+                    <!--<input name="authenticity_token" type="hidden" value="Mow/FBvh+i3YvinUyBUqqCe1ZaKQXRx7rSXq9vIsSJ+VsZD72AQnMd9SZ7dd4xcy4tmCdnhAavjdBGBbBbuz6A==" />-->
+                <!--</div>     -->
+            <div class="auth-form-header p-0">
+            <h1 >学情分析系统[教师端]</h1>
+            </div>
+
+
+            <div id="js-flash-container">
+            </div>
+
+
+            <div class="auth-form-body mt-3 row">
+                <label for="login_field">
+                    选择您所在的学校
+                </label>
+                <div class="col-xs-4">
+                    <select id="schoolList" class="form-control input-block" style="width:100%" tabindex="1" name="logSchool"></select>
+                </div>
+
+
+                <label for="login_field">
+                    请输入您的账号
+                </label>
+                <input autocapitalize="off" autocorrect="off" autofocus="autofocus" class="form-control input-block" id="login_field" name="logName" tabindex="1" type="text" />
+
+
+                <label for="password">
+                    请输入您的密码 
+                </label>
+
+                <input class="form-control form-control input-block text" id="password" name="logPass" tabindex="2" type="password" />
+                <button class="btn  btn-block btn-primary" type="button" onclick="Validate()" style="font-size: 16px; ">登陆</button>
+                <!--<input class="btn btn-primary btn-block" data-disable-with="Signing in…" name="commit" tabindex="3" type="submit"  value="登陆"/>-->
+            </div>
+        </form>
+            <p class="create-account-callout mt-3">
+                忘记了密码？
+                <a href="javascript:void(0)" >点击以找回密码</a>
+                <br>
+                <a href="javascript:void(0)" >注册一个教师账号</a>
+            </p>
+        </div>
+
+    <div class="modal-backdrop js-touch-events"></div>
+        <div class="footer container-lg p-responsive py-6 mt-6 f6" role="contentinfo">
+            <ul class="list-style-none d-flex flex-justify-center">
+                <li class="mr-3"><a href="javascript:void(0)" class="link-gray" data-ga-click="Footer, go to terms, text:terms">系统介绍</a></li>
+                <li class="mr-3"><a href="javascript:void(0)" class="link-gray" data-ga-click="Footer, go to privacy, text:privacy">相关政策</a></li>
+                <li class="mr-3"><a href="javascript:void(0)" class="link-gray" data-ga-click="Footer, go to security, text:security">问题反馈</a></li>
+                <li><a href="javascript:void(0)" class="link-gray" data-ga-click="Footer, go to contact, text:contact">联系我们</a></li>
+            </ul>
+        </div>
+</div>
+</div>
+
+</body>
+</html>
+
